@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 int main() {
-    int CustomerId, CustomerName, UnitConsumed, Charges_perUnit, bill, surcharge;
-    printf("please enter CustomerId, CustomerName, UnitConsumed:");
-    scanf("%d%c%d, CustomerId, CustomerName, UnitConsumed");
+    int CustomerId, UnitConsumed, surcharge;
+    char CustomerName;
+    float Charges_perUnit, bill;
+    printf("please enter CustomerId, CustomerName, UnitConsumed ,\n");
+    scanf("%d%c%d&, &CustomerId, &CustomerName, &UnitConsumed");
     
     bill=UnitConsumed*Charges_perUnit;
-    
-    bill>100;
     
     if (UnitConsumed >=0 && UnitConsumed<=199)
     {bill=UnitConsumed*1.20 ;}
@@ -20,9 +20,10 @@ int main() {
      {bill=UnitConsumed*2.00 ;}
      
      if (bill>400)
-     {surcharge=15/100*bill; 
+     {bill=bill+(0.15*bill)
      }
      printf("%f\n", bill);
+     
  
 
 
