@@ -1,3 +1,4 @@
+//promting the user to enter variables
 #include<stdio.h>
 
 int main()
