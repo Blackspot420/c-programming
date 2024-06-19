@@ -1,3 +1,4 @@
+//simple intrest
 #include<stdio.h>
 
 #define principal 1200
