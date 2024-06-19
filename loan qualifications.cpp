@@ -1,4 +1,4 @@
-// Online C compiler to run C program online
+// loan qualification
 #include <stdio.h>
 
 int main() {
